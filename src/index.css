@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Sinhala Sangam MN", Arial, sans-serif;
   color: #333;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   line-height: 1.6;
 }
 
@@ -230,3 +230,7 @@ p {
   background-color: #0056b3;
   transform: scale(1.05);
 }
+
+
+
+

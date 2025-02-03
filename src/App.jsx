@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
+
 
 const SimplicityRoom = () => {
   return (
@@ -19,7 +20,7 @@ const SimplicityRoom = () => {
       <div className="simplicity-room">
         <div className="hero">
           <h1 className="hero-title">Simplicity Room</h1>
-          <p className="hero-subtitle">Founder</p>
+          <p className="hero-subtitle">Founder / Digital Marketing</p>
         </div>
 
         <a href="https://simplicityroom.com" target="_blank" rel="noopener noreferrer">
@@ -117,7 +118,49 @@ const SimplicityRoom = () => {
           Next Project <a href="#">&rarr;</a>
         </div>
       </div>
+      <div className="simplicity-room">
+        <div className="hero">
+          <h1 className="hero-title">Thrive</h1>
+          <p className="hero-subtitle">Design / Project Manager</p>
+        </div>
+
+        <a >
+          <img src="/thrive.png" alt="Simplicity Room" className="main-image" />
+        </a>
+
+        <div className="content">
+          <p>
+          Thrive is an AI-driven fitness app designed to revolutionize the way you achieve your health and wellness goals. Combining intelligent coaching, real-time progress tracking, and seamless design, Thrive adapts to your lifestyle, making fitness more personalized, engaging, and effortless than ever before.
+          </p>
+
+          <p>
+          As the lead UI/UX designer and project manager, my focus was on delivering a frictionless and aesthetically refined experience while aligning design with technical feasibility. I worked closely with a team of designers to ensure a data-driven and user-friendly platform
+          </p>
+        
+        </div>
+
+      
+
+        <div className="next-project">
+          Next Project <a href="#prospective">&rarr;</a>
+        </div>
+      </div>
+
+
+
+
+
+
+      
     </div>
+
+
+
+
+
+
+
+
   );
 };
 
