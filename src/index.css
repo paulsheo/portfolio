@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Sinhala Sangam MN", Arial, sans-serif;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   line-height: 1.6;
 }
 
@@ -88,6 +88,7 @@ header nav a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   line-height: 1.8;
+  
 }
 
 
@@ -163,4 +164,69 @@ header nav a:hover {
       flex-direction: column;
       gap: 20px;
   }
+}
+
+p {
+  font-size: 22px; /* Increase paragraph text */
+  line-height: 1.8;
+}
+
+.why-prospective {
+  text-align: center; /* Center the content */
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center; /* Ensure the title is centered */
+}
+
+/* Center and Style the App Image */
+.app {
+  display: block; /* Ensures it's treated as a block-level element */
+  margin: 30px auto; /* Centers the image horizontally with proper spacing */
+  width: 250px; /* Set a fixed width for a smaller size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Gives a consistent rounded look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for consistency */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.app:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Center the button */
+.section {
+  text-align: center; /* Ensures text and elements inside are centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically if needed */
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 40px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.demo-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Ensures button respects the alignment */
+  margin-top: 20px; /* Adds space above the button */
+}
+
+.demo-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

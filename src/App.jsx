@@ -2,57 +2,123 @@ import React from 'react';
 import './index.css';
 
 const SimplicityRoom = () => {
-    return (
-        <div>
-            <header>
-                <img src="/logo.svg" alt="Logo" />
-                <nav>
-                    <a href="#">Projects</a>
-                    <a href="#">Case Study</a>
-                    <a href="#">About Me</a>
-                    <a href="#">Resume</a>
-                </nav>
-            </header>
+  return (
+    <div>
+      {/* Header */}
+      <header className="header">
+        <img src="/logo.svg" alt="Logo" className="logo" />
+        <nav className="nav">
+          <a href="#" className="nav-link">Projects</a>
+          <a href="#" className="nav-link">Case Study</a>
+          <a href="#" className="nav-link">About Me</a>
+          <a href="#" className="nav-link">Resume</a>
+        </nav>
+      </header>
 
-            <div className="hero">
-                <h1>Simplicity Room</h1>
-                <p>Founder</p>
-            </div>
-
-            <a href="https://simplicityroom.com" target="_blank" rel="noopener noreferrer">
-    <img src="/simplicityroom.png" alt="Simplicity Room" className="main-image" />
-</a>
-
-            <div className="content">
-                <p>Simplicity Room is a testament to a minimalist yet highly functional e-commerce design. The website showcases a seamless user interface and intuitive navigation, creating a delightful shopping experience for every visitor. Among the standout achievements is the "Odyssey Orb," a unique product that garnered an impressive 60,000 Instagram followers and surpassed $100,000 in sales. Simplicity Room embodies the blend of aesthetic appeal and business success.</p>
-            </div>
-
-            <div className="stats">
-                <div className="stat">
-                <a href="https://www.instagram.com/odysseyorb_official/" target="_blank" rel="noopener noreferrer">
-    <img src="/instagram.png" alt="Instagram" />
-</a>
-                    <span>60K Followers</span>
-                </div>
-                <div className="stat">
-                <a href="https://www.instagram.com/odysseyorb_official/reels/" target="_blank" rel="noopener noreferrer">
-    <img src="/playbutton.webp" alt="Views" />
-</a>
-                    <span>120+ Million Views</span>
-                </div>
-                <div className="stat">
-                <a href="https://simplicityroom.com/products/odysseyorb" target="_blank" rel="noopener noreferrer">
-    <img src="/piggy.webp" alt="Sales" />
-</a>
-                    <span>$100,000+ in Sales</span>
-                </div>
-            </div>
-
-            <div className="next-project">
-                Next Project <a href="#">&rarr;</a>
-            </div>
+      {/* Simplicity Room Section */}
+      <div className="simplicity-room">
+        <div className="hero">
+          <h1 className="hero-title">Simplicity Room</h1>
+          <p className="hero-subtitle">Founder</p>
         </div>
-    );
+
+        <a href="https://simplicityroom.com" target="_blank" rel="noopener noreferrer">
+          <img src="/simplicityroom.png" alt="Simplicity Room" className="main-image" />
+        </a>
+
+        <div className="content">
+          <p>
+            Simplicity Room stands as a testament to the power of organic digital marketing, proving that a minimalist yet
+            highly functional e-commerce platform can achieve massive success without paid advertising. With a seamless user
+            experience and intuitive navigation, the brand has leveraged highly engaging, self-produced video content to
+            captivate audiences and drive conversions.
+          </p>
+          <p>
+            A prime example of this success is the Odyssey Orb, which amassed 60,000 Instagram followers and generated over
+            $100,000 in sales—all fueled purely by organic reach. Through strategic content creation, viral storytelling, and
+            algorithm-driven visibility, Simplicity Room has mastered the art of digital engagement without relying on paid
+            ads or external promotions.
+          </p>
+          <p>
+            By focusing on compelling, original content and an optimized user experience, Simplicity Room continues to
+            redefine modern e-commerce marketing, proving that authenticity and creativity can drive sustainable growth at
+            scale.
+          </p>
+        </div>
+
+        <div className="stats">
+          <div className="stat">
+            <a href="https://www.instagram.com/odysseyorb_official/" target="_blank" rel="noopener noreferrer">
+              <img src="/instagram.png" alt="Instagram" />
+            </a>
+            <span>60K Followers</span>
+          </div>
+          <div className="stat">
+            <a href="https://www.instagram.com/odysseyorb_official/reels/" target="_blank" rel="noopener noreferrer">
+              <img src="/playbutton.webp" alt="Views" />
+            </a>
+            <span>120+ Million Views</span>
+          </div>
+          <div className="stat">
+            <a href="https://simplicityroom.com/products/odysseyorb" target="_blank" rel="noopener noreferrer">
+              <img src="/piggy.webp" alt="Sales" />
+            </a>
+            <span>$100,000+ in Sales</span>
+          </div>
+        </div>
+
+        <div className="next-project">
+          Next Project <a href="#prospective">&rarr;</a>
+        </div>
+      </div>
+
+      {/* Prospective Section */}
+      <div className="prospective" id="prospective">
+        <div className="hero">
+          <h1 className="hero-title">Prospective</h1>
+          <p className="hero-subtitle">Design / Project Manager</p>
+        </div>
+
+
+        <img src="/prospectiveapp.png" alt="prospective" className="app" />
+        
+        <div className="content">
+          <p>
+          Prospective is a design-first, AI-driven platform that reimagines the scholarship search experience through seamless user interaction, intuitive UI patterns, and human-centered UX design. Developed as a portfolio showcase, the project demonstrates my expertise in UX research, interface design, and project management, while collaborating with a team of full-stack developers to bring a functional, visually cohesive, and highly scalable product to life.
+
+
+          </p>
+          <p>
+          As the lead UI/UX designer and project manager, my role extended beyond conceptual design—I was responsible for crafting a frictionless, accessible, and aesthetically refined experience while coordinating efforts with engineers to align design intent with technical feasibility. I conducted competitive analysis, user research, wireframing, prototyping, and usability testing, ensuring that every design decision was driven by data and user behavior insights.
+
+
+          </p>
+        
+        </div>
+
+
+
+
+        <div className="section">
+        <img src="/prospectivedescription.png" alt="Logo" className="description" />
+  <h2 className="section-title">Check Out our Demo</h2>
+  <a href="https://vercel-prospective-awarewear.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <button className="demo-button">Demo</button>
+  </a>
+
+
+</div>
+
+        
+       
+
+       
+        <div className="next-project">
+          Next Project <a href="#">&rarr;</a>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default SimplicityRoom;
