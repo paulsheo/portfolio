@@ -75,7 +75,8 @@ header nav a:hover {
 }
 
 .main-image:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
+}
 
 
 .content {
@@ -194,6 +195,7 @@ p {
 
 .app:hover {
   transform: scale(1.02); 
+}
 
 /* Center the button */
 .section {
