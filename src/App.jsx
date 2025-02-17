@@ -1,6 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './index.css';
+import AboutMe from './AboutMe';
+import Resume from './Resume'; // Import Resume page
 
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<SimplicityRoom />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/resume" element={<Resume />} /> {/* Add Resume Page */}
+      </Routes>
+    </Router>
+  );
+}
 
 const SimplicityRoom = () => {
   return (
@@ -11,8 +25,8 @@ const SimplicityRoom = () => {
         <nav className="nav">
           <a href="#" className="nav-link">Projects</a>
           <a href="#" className="nav-link">Case Study</a>
-          <a href="#" className="nav-link">About Me</a>
-          <a href="#" className="nav-link">Resume</a>
+          <Link to="/about" className="nav-link">About Me</Link>
+          <Link to="/resume" className="nav-link active">Resume</Link>
         </nav>
       </header>
 
@@ -164,4 +178,4 @@ const SimplicityRoom = () => {
   );
 };
 
-export default SimplicityRoom;
+export default App;

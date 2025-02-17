@@ -1,0 +1,217 @@
+/* ========== NEW STYLES ADDED ON TOP ========== */
+
+/* Hero Section - Image on Left, Text on Right */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 50px;
+    background: white;
+}
+
+/* Left Image */
+.hero-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Text */
+.hero-text {
+    flex: 2;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-text .highlight {
+    color: #007bff;
+}
+
+/* Responsive Hero Section */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 200px;
+    }
+}
+
+/* ========== EXISTING STYLES BELOW ========== */
+
+/* General Page Styling */
+.about-me-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #007bff;
+}
+
+/* About Me Content */
+.about-content {
+    padding: 40px 50px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content h2 {
+    margin-top: 40px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-box {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Experience Timeline */
+.timeline {
+    margin-top: 20px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #0056b3;
+}
+
+/* About Section - Image on Left, Text on Right */
+.about-section {
+    display: flex;
+    align-items: flex-start; /* Aligns image with the start of text */
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Image on the Left */
+.about-image {
+    flex: 1;
+    max-width: 400px; /* Increased image size */
+}
+
+.about-image img {
+    width: 100%;
+    height: 500px; /* Taller image to match My Journey & Experience */
+    object-fit: cover;
+    border-radius: 0; /* Keep it square */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text on the Right */
+.about-text {
+    flex: 2;
+    max-width: 700px;
+}
+
+/* Ensure Image Stays Aligned on Larger Screens */
+@media screen and (max-width: 1024px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        height: auto;
+    }
+}
