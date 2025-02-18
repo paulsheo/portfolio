@@ -1,6 +1,4 @@
-/* ========== NEW STYLES ADDED ON TOP ========== */
 
-/* Hero Section - Image on Left, Text on Right */
 .hero-section {
     display: flex;
     align-items: center;
@@ -11,7 +9,6 @@
     background: white;
 }
 
-/* Left Image */
 .hero-image {
     flex: 1;
     max-width: 300px;
@@ -25,7 +22,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Right Text */
+
 .hero-text {
     flex: 2;
     max-width: 600px;
@@ -40,7 +37,7 @@
     color: #007bff;
 }
 
-/* Responsive Hero Section */
+
 @media screen and (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -52,9 +49,7 @@
     }
 }
 
-/* ========== EXISTING STYLES BELOW ========== */
 
-/* General Page Styling */
 .about-me-container {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -62,7 +57,6 @@
     padding-bottom: 50px;
 }
 
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -93,7 +87,6 @@
     color: #007bff;
 }
 
-/* About Me Content */
 .about-content {
     padding: 40px 50px;
     max-width: 900px;
@@ -107,7 +100,7 @@
     padding-bottom: 5px;
 }
 
-/* Skills */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -124,7 +117,7 @@
     border-radius: 5px;
 }
 
-/* Experience Timeline */
+
 .timeline {
     margin-top: 20px;
     border-left: 3px solid #007bff;
@@ -147,7 +140,7 @@
     border-radius: 50%;
 }
 
-/* Contact Section */
+
 .contact-section {
     text-align: center;
     margin-top: 50px;
@@ -168,10 +161,10 @@
     background: #0056b3;
 }
 
-/* About Section - Image on Left, Text on Right */
+
 .about-section {
     display: flex;
-    align-items: flex-start; /* Aligns image with the start of text */
+    align-items: flex-start; 
     justify-content: center;
     gap: 50px;
     padding: 50px;
@@ -179,27 +172,27 @@
     margin: auto;
 }
 
-/* Image on the Left */
+
 .about-image {
     flex: 1;
-    max-width: 400px; /* Increased image size */
+    max-width: 400px;
 }
 
 .about-image img {
     width: 100%;
-    height: 500px; /* Taller image to match My Journey & Experience */
+    height: 500px;
     object-fit: cover;
-    border-radius: 0; /* Keep it square */
+    border-radius: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Text on the Right */
+
 .about-text {
     flex: 2;
     max-width: 700px;
 }
 
-/* Ensure Image Stays Aligned on Larger Screens */
+
 @media screen and (max-width: 1024px) {
     .about-section {
         flex-direction: column;
