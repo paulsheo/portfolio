@@ -23,11 +23,11 @@ const AboutMe = () => {
           <h2>My Journey</h2>
           <p>
             I started my journey with a deep interest in launching my own e-commerce store, fascinated by how design and marketing could shape online shopping experiences.  
-            As I worked on different projects in UI/UX. I realized that great design isn’t just about aesthetics—it’s about **solving problems, enhancing usability, and driving engagement**.  
+            As I worked on different projects in UI/UX. I realized that great design isn’t just about aesthetics—it’s about solving problems, enhancing usability, and driving engagement.  
           </p>
           <p>
-            This realization led me to explore the intersection of **e-commerce, digital marketing, and user experience**, where **conversion-driven design** plays a crucial role in business growth.  
-            By combining UI/UX principles with **strategic marketing tactics**, I’ve been able to create **seamless, high-converting digital experiences** that not only look good but also drive results.  
+            This realization led me to explore the intersection of e-commerce, digital marketing, and user experience where conversion-driven design plays a crucial role in business growth.  
+            By combining UI/UX principles with strategic marketing tactics, I’ve been able to create seamless, high-converting digital experiences that not only look good but also drive results.  
           </p>
 
           {/* Skills Section */}
