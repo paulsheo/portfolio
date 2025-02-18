@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './index.css';
 import AboutMe from './AboutMe';
-import Resume from './Resume'; 
+import Resume from './Resume';
+
+
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SimplicityRoom />} />
         <Route path="/about" element={<AboutMe />} />
-        <Route path="/resume" element={<Resume />} /> 
+        <Route path="/resume" element={<Resume />} /> {/* Add Resume Page */}
       </Routes>
     </Router>
   );
