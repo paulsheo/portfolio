@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './aboutme.css'; // Import CSS
+import './aboutme.css'; 
 
 const AboutMe = () => {
   return (
     <div className="about-me-container">
-      {/* Navigation */}
+
       <header className="header">
         <img src="/logo.svg" alt="Logo" className="logo" />
         <nav className="nav">
@@ -14,7 +14,7 @@ const AboutMe = () => {
         </nav>
       </header>
 
-      {/* About Section (Image Left, Text Right) */}
+   
       <div className="about-section">
         <div className="about-image">
           <img src="/me.JPG" alt="Paul" />
@@ -23,7 +23,7 @@ const AboutMe = () => {
           <h2>My Journey</h2>
           <p>
             I started my journey with a deep interest in launching my own e-commerce store, fascinated by how design and marketing could shape online shopping experiences.  
-            As I worked on different projects in **UI/UX**, I realized that great design isn’t just about aesthetics—it’s about **solving problems, enhancing usability, and driving engagement**.  
+            As I worked on different projects in UI/UX. I realized that great design isn’t just about aesthetics—it’s about **solving problems, enhancing usability, and driving engagement**.  
           </p>
           <p>
             This realization led me to explore the intersection of **e-commerce, digital marketing, and user experience**, where **conversion-driven design** plays a crucial role in business growth.  
@@ -53,7 +53,7 @@ const AboutMe = () => {
         <div className="timeline">
           <div className="timeline-item">
             <h3>Simplicity Room (Founder)</h3>
-            <p>Built a 6-figure e-commerce business with 60K+ followers using organic marketing strategies. Developed and optimized the UI/UX to enhance customer engagement and drive conversions.</p>
+            <p>Built succcessful e-commerce business with 60K+ followers using organic marketing strategies. Developed and optimized the UI/UX to enhance customer engagement and drive conversions.</p>
           </div>
 
           <div className="timeline-item">
@@ -63,21 +63,20 @@ const AboutMe = () => {
 
           <div className="timeline-item">
             <h3>Front-End Developer</h3>
-            <p>Developed responsive websites and web applications using **React.js, JavaScript, HTML, and CSS**. Implemented interactive components, animations, and API integrations to enhance functionality.</p>
+            <p>Developed responsive websites and web applications using React.js, JavaScript, HTML, and CSS. Implemented interactive components, animations, and API integrations to enhance functionality.</p>
           </div>
 
           <div className="timeline-item">
             <h3>Full-Stack Project Collaboration</h3>
-            <p>Worked alongside developers to integrate UI/UX designs into production. Gained experience with **Node.js, Firebase, and headless CMS** to build scalable applications.</p>
+            <p>Worked alongside developers to integrate UI/UX designs into production. Gained experience with Node.js andFirebase to build scalable applications.</p>
           </div>
 
           <div className="timeline-item">
             <h3>Digital Marketing</h3>
-            <p>Developed strategies that drove **millions of impressions and 100K+ sales**. Utilized **SEO, data-driven UI improvements, and A/B testing** to optimize conversion rates.</p>
+            <p>Developed strategies that drove millions of impressions and 100K+ sales. Utilized SEO, data-driven UI improvements, and A/B testing to optimize conversion rates.</p>
           </div>
         </div>
 
-        {/* Contact CTA */}
         <div className="contact-section">
           <h2>Let's Connect!</h2>
           <p>I'm always open to new opportunities, collaborations, or just a chat about design and marketing.</p>

@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SimplicityRoom />} />
         <Route path="/about" element={<AboutMe />} />
-        <Route path="/resume" element={<Resume />} /> {/* Add Resume Page */}
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </Router>
   );
@@ -21,7 +21,7 @@ function App() {
 const SimplicityRoom = () => {
   return (
     <div>
-      {/* Header */}
+  
       <header className="header">
         <img src="/logo.svg" alt="Logo" className="logo" />
         <nav className="nav">
@@ -32,7 +32,7 @@ const SimplicityRoom = () => {
         </nav>
       </header>
 
-      {/* Simplicity Room Section */}
+
       <div className="simplicity-room">
         <div className="hero">
           <h1 className="hero-title">Simplicity Room</h1>
@@ -89,7 +89,7 @@ const SimplicityRoom = () => {
         </div>
       </div>
 
-      {/* Prospective Section */}
+
       <div className="prospective" id="prospective">
         <div className="hero">
           <h1 className="hero-title">Prospective</h1>
