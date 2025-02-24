@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './index.css';
 import AboutMe from './AboutMe';
 import Resume from './Resume';
+import HomePage from './Home';
+import CaseStudy from './CaseStudy'; 
 
 
 
@@ -10,9 +12,13 @@ function App() {
   return (
     <Router>
       <Routes>
+      <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<SimplicityRoom />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/case" element={<CaseStudy />} /> 
+            <Route path="/resume" element={<Resume />} />
+
       </Routes>
     </Router>
   );
@@ -25,8 +31,9 @@ const SimplicityRoom = () => {
       <header className="header">
         <img src="/logo.svg" alt="Logo" className="logo" />
         <nav className="nav">
+        <Link to="/home" className="nav-link">Home</Link>
           <a href="#" className="nav-link">Projects</a>
-          <a href="#" className="nav-link">Case Study</a>
+          <Link to="/case" className="nav-link">Case Study</Link>
           <Link to="/about" className="nav-link">About Me</Link>
           <Link to="/resume" className="nav-link active">Resume</Link>
         </nav>

@@ -9,7 +9,7 @@ const AboutMe = () => {
       <header className="header">
         <img src="/logo.svg" alt="Logo" className="logo" />
         <nav className="nav">
-          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/" className="nav-link">Projects</Link>
           <Link to="/about" className="nav-link active">About Me</Link>
         </nav>
       </header>
@@ -30,7 +30,7 @@ const AboutMe = () => {
             By combining UI/UX principles with strategic marketing tactics, I’ve been able to create seamless, high-converting digital experiences that not only look good but also drive results.  
           </p>
 
-          {/* Skills Section */}
+       
           <h2>Skills & Expertise</h2>
           <div className="skills-grid">
             <div className="skill-box">UI/UX Design</div>
@@ -47,7 +47,6 @@ const AboutMe = () => {
         </div>
       </div>
 
-      {/* Experience Section */}
       <div className="about-content">
         <h2>Experience</h2>
         <div className="timeline">
@@ -57,7 +56,7 @@ const AboutMe = () => {
           </div>
 
           <div className="timeline-item">
-            <h3>UI/UX Design Freelancer</h3>
+            <h3>UI/UX Design</h3>
             <p>Designed intuitive web and mobile experiences for startups and enterprises, focusing on usability, accessibility, and conversion-driven interfaces.</p>
           </div>
 
@@ -73,7 +72,7 @@ const AboutMe = () => {
 
           <div className="timeline-item">
             <h3>Digital Marketing</h3>
-            <p>Developed strategies that drove millions of impressions and 100K+ sales. Utilized SEO, data-driven UI improvements, and A/B testing to optimize conversion rates.</p>
+            <p>Developed strategies that drove millions of impressions and 100K+ sales. Utilized SEO, and data-driven UI improvements</p>
           </div>
         </div>
 
