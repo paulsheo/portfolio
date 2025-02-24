@@ -46,28 +46,28 @@ const HomePage = () => {
         {[
           {
             title: "Prospective: The Future of AI Scholarship Apps",
-            date: "1st February 2024",
+       
     
             image: "/prospectiveapp.png",
 
           },
           {
             title: "'Simplicity Room: A Look into Digital Marketing",
-            date: "13th July 2023",
+           
            
             image: "/simplicityroom.png",
 
           },
           {
             title: "Thrive",
-            date: "7th September 2022",
+        
          
             image: "/welcome-page.png",
 
           },
           {
             title: "Graphic Design Work",
-            date: "15th November 2021",
+      
    
             image: "/cyberpunk.jpg",
 
