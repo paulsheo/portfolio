@@ -70,7 +70,7 @@ const HomePage = () => {
             link: "/#"
           },
           {
-            title: "Thrive",
+            title: "Thrive: A wellness app for Personalized Workouts",
             image: "/welcome-page.png",
             link: "/#thrive" 
           },
