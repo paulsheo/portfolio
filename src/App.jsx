@@ -29,7 +29,9 @@ const SimplicityRoom = () => {
     <div>
   
       <header className="header">
-        <img src="/logo.svg" alt="Logo" className="logo" />
+       <Link to="/home">
+               <img src="/logo.svg" alt="Logo" className="logo" />
+             </Link>
         <nav className="nav">
         <Link to="/home" className="nav-link">Home</Link>
           <a href="#" className="nav-link">Projects</a>
@@ -138,10 +140,10 @@ const SimplicityRoom = () => {
 
        
         <div className="next-project">
-          Next Project <a href="#">&rarr;</a>
+        Next Project <a href="#thrive">&rarr;</a>
         </div>
       </div>
-      <div className="simplicity-room">
+      <div className="simplicity-room" id="thrive">
         <div className="hero">
           <h1 className="hero-title">Thrive</h1>
           <p className="hero-subtitle">Design / Project Manager</p>
@@ -164,9 +166,6 @@ const SimplicityRoom = () => {
 
       
 
-        <div className="next-project">
-          Next Project <a href="#prospective">&rarr;</a>
-        </div>
       </div>
 
 

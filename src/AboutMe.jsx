@@ -7,10 +7,15 @@ const AboutMe = () => {
     <div className="about-me-container">
 
       <header className="header">
-        <img src="/logo.svg" alt="Logo" className="logo" />
+      <Link to="/home">
+          <img src="/logo.svg" alt="Logo" className="logo" />
+        </Link>
         <nav className="nav">
-          <Link to="/" className="nav-link">Projects</Link>
-          <Link to="/about" className="nav-link active">About Me</Link>
+   <Link to="/home" className="nav-link">Home</Link>
+           <Link to="/" className="nav-link">Projects</Link>
+           <Link to="/case" className="nav-link active">Case Study</Link>
+           <Link to="/about" className="nav-link">About Me</Link>
+           <Link to="/resume" className="nav-link">Resume</Link>
         </nav>
       </header>
 
@@ -79,7 +84,7 @@ const AboutMe = () => {
         <div className="contact-section">
           <h2>Let's Connect!</h2>
           <p>I'm always open to new opportunities, collaborations, or just a chat about design and marketing.</p>
-          <a href="mailto:your@email.com" className="contact-button">Get in Touch</a>
+          <a href="mailto:paulsheo50@gmail.com" className="contact-button">Get in Touch</a>
         </div>
       </div>
     </div>

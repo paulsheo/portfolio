@@ -7,11 +7,15 @@ const Resume = () => {
     <div className="resume-container">
   
       <header className="header">
-        <img src="/logo.svg" alt="Logo" className="logo" />
+      <Link to="/home">
+              <img src="/logo.svg" alt="Logo" className="logo" />
+            </Link>
         <nav className="nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About Me</Link>
-          <Link to="/resume" className="nav-link active">Resume</Link>
+           <Link to="/home" className="nav-link">Home</Link>
+                   <Link to="/" className="nav-link">Projects</Link>
+                   <Link to="/case" className="nav-link active">Case Study</Link>
+                   <Link to="/about" className="nav-link">About Me</Link>
+                   <Link to="/resume" className="nav-link">Resume</Link>
         </nav>
       </header>
 
