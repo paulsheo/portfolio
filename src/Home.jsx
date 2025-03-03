@@ -52,7 +52,7 @@ const HomePage = () => {
           {
             title: "Simplicity Room: A Look into Digital Marketing",
             image: "/simplicityroom.png",
-            link: "/projects"
+            link: "/#"
           },
           {
             title: "Thrive",
