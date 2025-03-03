@@ -49,7 +49,10 @@ const SimplicityRoom = () => {
         </div>
 
         <a href="https://simplicityroom.com" target="_blank" rel="noopener noreferrer">
-          <img src="/simplicityroom.png" alt="Simplicity Room" className="main-image" />
+        <video className="main-video" autoPlay loop muted playsInline>
+  <source src="/simplicityvideo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
         </a>
 
         <div className="content">

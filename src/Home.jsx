@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import './home.css'; 
 import AboutMe from './AboutMe';
 import Resume from './Resume';
@@ -24,9 +25,9 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <header className="header">
-       <Link to="/home">
-               <img src="/logo.svg" alt="Logo" className="logo" />
-             </Link>
+        <Link to="/home">
+          <img src="/logo.svg" alt="Logo" className="logo" />
+        </Link>
         <nav className="nav">
           <Link to="/home" className="nav-link">Home</Link>
           <Link to="/#" className="nav-link">Projects</Link>
@@ -37,8 +38,22 @@ const HomePage = () => {
       </header>
 
       <section className="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my journey in UI/UX design, digital marketing, and creative problem-solving.</p>
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          Welcome to My Portfolio
+        </motion.h1>
+        <motion.p 
+          initial={{ color: "#000", x: -20 }}
+          animate={{ x: [20, -20, 20], color: ["#ff5733", "#33ff57", "#5733ff"] }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Explore my journey in UI/UX design, digital marketing, and creative problem-solving.
+        </motion.p>
         <Link to="/#" className="cta-button">View My Work</Link>
       </section>
 
