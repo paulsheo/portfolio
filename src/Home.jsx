@@ -52,7 +52,7 @@ const HomePage = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Explore my journey in UI/UX design, digital marketing, and creative problem-solving.
+          Explore my journey in UI/UX design, digital marketing, and creative problem solving.
         </motion.p>
         <Link to="/#" className="cta-button">View My Work</Link>
       </section>
@@ -61,7 +61,7 @@ const HomePage = () => {
         {[
           {
             title: "Prospective: The Future of AI Scholarship Apps",
-            image: "/prospectiveapp.png",
+            image: "/prospecitve-cover.jpg",
             link: "/case"
           },
           {
@@ -71,9 +71,28 @@ const HomePage = () => {
           },
           {
             title: "Thrive: A wellness app for Personalized Workouts",
-            image: "/welcome-page.png",
+            image: "/thrive-cover.jpg",
             link: "/#thrive" 
           },
+          {
+            title: "Cyberpunk 2077: PS4 Game Cover Mockup",
+            image: "/cyberpunk.jpg",
+          },
+
+          {
+            title: "Creatures: Movie Poster Mockup",
+            image: "/s.png",
+            link: "/#thrive" 
+          },
+
+          {
+            title: "MNM1: Fashion E-Commerce Branding", 
+            image: "/mnm1.png",
+            link: "/#thrive" 
+          },
+
+
+          
         ].map((article, index) => (
           <Link key={index} to={article.link} className="article-link">
             <div className="article-card">

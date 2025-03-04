@@ -1,11 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import './aboutme.css'; 
+
+const skills = [
+  "UI/UX Design",
+  "Wireframing & Prototyping",
+  "Digital Marketing",
+  "SEO & Content Strategy",
+  "E-Commerce Growth",
+  "JavaScript",
+  "Adobe Photoshop",
+  "Adobe Illustrator",
+  "Adobe InDesign",
+  "Adobe After Effects",
+];
 
 const AboutMe = () => {
   return (
     <div className="about-me-container">
-
       <header className="header">
         <Link to="/home">
           <img src="/logo.svg" alt="Logo" className="logo" />
@@ -36,16 +49,18 @@ const AboutMe = () => {
 
           <h2>Skills & Expertise</h2>
           <div className="skills-grid">
-            <div className="skill-box">UI/UX Design</div>
-            <div className="skill-box">Wireframing & Prototyping</div>
-            <div className="skill-box">Digital Marketing</div>
-            <div className="skill-box">SEO & Content Strategy</div>
-            <div className="skill-box">E-Commerce Growth</div>
-            <div className="skill-box">JavaScript</div>
-            <div className="skill-box">Adobe Photoshop</div>
-            <div className="skill-box">Adobe Illustrator</div>
-            <div className="skill-box">Adobe Indesign</div>
-            <div className="skill-box">Adobe After Effects</div>
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                className="skill-box p-4 bg-gray-200 rounded-xl text-center shadow-md"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                {skill}
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
@@ -83,13 +98,11 @@ const AboutMe = () => {
           <h2>Let's Connect!</h2>
           <p>I'm always open to new opportunities, collaborations, or just a chat about design and marketing.</p>
           <a href="mailto:paulsheo50@gmail.com" className="contact-button">Get in Touch</a>
-          
-          
         </div>
       </div>
-
     </div>
   );
 };
 
 export default AboutMe;
+  
